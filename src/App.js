@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import NavBar from './components/NavBar/NavBar'
 //redux imports go here
 //connect connects react component with store
 import {connect} from 'react-redux'
@@ -14,14 +14,8 @@ const App = (props)=> {
   console.log(props)
   return(
     <div>
+      <NavBar />
       <h1>Hello from simple redux {props.name[0]}</h1>
-      <form onSubmit={(e)=>{
-        e.preventDefault()
-        props.addName('youseffff')}
-      }>
-        <input type='text'  />
-        <button>Submit</button>
-      </form>
     </div>
   )
 }
