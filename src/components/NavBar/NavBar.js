@@ -5,8 +5,7 @@ import LoggedOutLinks from './LoggedOutLinks'
 
 
 
-class NavBar extends React.Component{
-	render(){
+const NavBar = ()=>{
 		return(
 			<nav>
     			<div className="nav-wrapper">
@@ -16,7 +15,6 @@ class NavBar extends React.Component{
     			</div>
   			</nav>
 		)
-	}
 }
 
 
