@@ -11,11 +11,10 @@ import addName from './redux/actions/appActions'
 
 
 const App = (props)=> {
-  console.log(props)
   return(
     <div>
       <NavBar />
-      <h1>Hello from simple redux {props.name[0]}</h1>
+      <h1>Hello from simple redux </h1>
     </div>
   )
 }
