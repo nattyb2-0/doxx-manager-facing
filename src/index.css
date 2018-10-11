@@ -7,3 +7,11 @@ body {
  html {
  	min-height: 100%
  }
+
+ .navigation{
+ 	padding-left: 50px;
+ }
+
+.appContainer{
+	margin-top: 20px
+}

@@ -14,13 +14,117 @@ const App = (props)=> {
   return(
     <div>
       <NavBar />
-      <div className='container'>
+      <div className=' appContainer'>
         <div className="row">
-          <div className="col s12 m3">
-            <h1 className="center">left</h1>
+          <div className="col s12 m5">
+            <div className="row">
+              <form className="form col s12 m6">
+                <fieldset>
+                  <legend>USD Operations</legend>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">USD Brought Forward</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">USD Deposits To</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">USD ADD ON FROM CHANGING</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">USD DEPOSITED</label>
+                </div>
+                <div className="input-field">
+                  <input disabled value={100+450+90+80-78+1200} id="disabled" type="text" className="validate"/>
+                  <label for="disabled">Total Operation Cash</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">SPORTS BOX PAY</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">CASINO PAY</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">USD CHANGED TO LD</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">ERROR</label>
+                </div>
+                <div className="input-field">
+                  <input disabled value={100+450+90+80-78} id="disabled" type="text" className="validate"/>
+                  <label for="disabled">Balance USD</label>
+                </div>
+                </fieldset>
+              </form>
+              <form className="form col s12 m6">
+                <fieldset>
+                  <legend>LD Breakdown</legend>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                </fieldset>
+              </form>
+              <form className="form col s12 m12">
+                <fieldset>
+                  <legend>LD Breakdown</legend>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div className="input-field">
+                  <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                  <label for="first_name">First Name</label>
+                </div>
+                </fieldset>
+              </form>
+            </div> 
           </div>
 
-          <div className="col col s12 m9 offset-1">
+          <div className="col col s12 m7 ">
             <h1 className="center">right</h1>
           </div>
 
