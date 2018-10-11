@@ -11,8 +11,8 @@ const NavBar = (props)=>{
 	console.log(link)
 		return(
 			<nav>
-    			<div className="nav-wrapper">
-      				<a href="#!" className="brand-logo center">Doxx Manager's App</a>
+    			<div className="nav-wrapper black">
+      				<a href="#!" className="brand-logo center red-text">Doxx Manager's App</a>
       				{link}
     			</div>
   			</nav>

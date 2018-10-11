@@ -14,7 +14,18 @@ const App = (props)=> {
   return(
     <div>
       <NavBar />
-      <h1>Hello from simple redux </h1>
+      <div className='container'>
+        <div className="row">
+          <div className="col s12 m3">
+            <h1 className="center">left</h1>
+          </div>
+
+          <div className="col col s12 m9 offset-1">
+            <h1 className="center">right</h1>
+          </div>
+
+        </div>
+      </div>
     </div>
   )
 }
