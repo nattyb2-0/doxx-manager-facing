@@ -6,9 +6,7 @@ import {connect} from 'react-redux'
 
 
 const NavBar = (props)=>{
-	console.log(props)
 	const link = props && props.nav.loggedIn ? (<LoggedInLinks />) : (<LoggedOutLinks />)
-	console.log(link)
 		return(
 			<nav>
     			<div className="nav-wrapper black navigation">
