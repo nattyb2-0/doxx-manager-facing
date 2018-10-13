@@ -24,7 +24,9 @@ const App = (props)=> {
 
   const me = (e)=>{
     console.log(props.start,props.depositsTo,props.addOn,props.deposit)
-    props.changeStart(e.target.value)
+    let num = e.target.value != NaN ? e.target.value : 0
+    console.log(num)
+    props.changeStart(num)
     props.changeOperationCash()
   }
    const me1 = (e)=>{
@@ -43,6 +45,19 @@ const App = (props)=> {
     props.changeOperationCash()
   }
 
+  const renderComponent = (id)=>{
+    if (id === 0) {
+     console.log(0)
+   } else if(id==1){
+     console.log(1)
+   } else if (id==2){
+     console.log(2)
+   } else if (id==3){
+     console.log(3)
+   }
+ }
+
+
   return(
     <div>
       <NavBar />
@@ -52,7 +67,7 @@ const App = (props)=> {
             <div className="row">
               <div className="row">
               <ul className ='col s3 m3'>
-                <li><a className="waves-effect waves-light btn red">USD REPORTING</a></li>
+                <li><a className="waves-effect waves-light btn red" id= {0} onClick= {(e)=>{props.renderComponent(e.target.id)}}>USD REPORTING</a></li>
               </ul>
               <ul className ='col s3 m3' >
                 <li><a className="waves-effect waves-light btn red">LD REPORTING</a></li>
@@ -183,7 +198,8 @@ const mapStateToProps = state =>{
     depositsTo: state.form.depositsTo,
     addOn: state.form.addOn,
     deposit: state.form.deposit,
-    operationCash: state.form.operationsCash
+    operationCash: state.form.operationsCash,
+    formNumber: state.form.formNumber
   }
 }
 

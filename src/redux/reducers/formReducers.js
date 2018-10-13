@@ -8,17 +8,18 @@
 
 const something = (start,depositsTo,addOn,deposit)=>{
 	return{
+
 		start: start,
 		depositsTo: depositsTo,
 		addOn: addOn,
 		deposit: deposit,
-		operationsCash: 0
+		operationsCash: 0,
+		formNumber:0
 		
 	}
 }
 
 const initialState = something(0, 0, 0, 0)
-
 
 
 const formReducer = (state=initialState, action) => {

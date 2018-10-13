@@ -5,7 +5,7 @@ const changeStart = amount =>{
 	return (dispatch, getState) => {
 		dispatch({
 			type: 'CHANGE_START',
-			start: amount
+			start: amount || 0
 		})
     }
 }
@@ -13,10 +13,11 @@ const changeStart = amount =>{
   
 
 const changeDepositsTo = amount =>{
+	
 	return (dispatch, getState) => {
 		dispatch({
 			type: 'CHANGE_DEPOSITS_TO',
-			depositsTo: amount
+			depositsTo: amount|| 0
 		})
     }
 }
@@ -25,7 +26,7 @@ const changeUsdAdd = amount =>{
 	return (dispatch, getState) => {
 		dispatch({
 			type: 'CHANGE_USD_ADD',
-			addOn: amount
+			addOn: amount || 0
 		})
     }
 }
@@ -34,7 +35,7 @@ const changeUsdDeposited = amount =>{
 	return (dispatch, getState) => {
 		dispatch({
 			type: 'CHANGE_USD_DEPOSITED',
-			deposit: amount
+			deposit: amount || 0
 		})
     }
 }
